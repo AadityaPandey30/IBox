@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="msgstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/58118f0173.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+         <div class="logo">
+          <i class="fas fa-solid fa-bars menu-btn" style="color: black;margin: auto;margin: auto 15px auto 10px;"></i>
+          <a href="index.html" style="margin: auto;"><span><i class="fas fa-brands fa-wolf-pack-battalion" style="color: black; margin: auto;"><span> IBox</span></i></span></a>
+          <input type="text" placeholder="Search..." class="Search" id="search-bar"/><button class="Search" id="search"><i class=" fa-solid fa-magnifying-glass" style="padding: 5px;"></i></button>
+        </div>
+         <div class="user-settings">
+          <div class="dark-light" style="color: black;">
+           <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
+          </div>
+          <div class="FirstPage">
+            <i class="fa-solid fa-folder-open" onclick="openFileExplorer()"></i>
+            </div>
+          <img id="profile-button" class="user-profile" src="Aadi Photo.jpeg" class="account-profile">
+         </div>
+        </div>
+        <div class="wrapper hlo">
+         <div class="conversation-area">
+        
+          <div class="msg online" onclick="reloadPage()">
+           <img class="msg-profile" src="Aadi Photo.jpeg">
+           <div class="msg-detail">
+            <div class="msg-username">Myself</div>
+            <div class="msg-content">
+             <span class="msg-message">You deleted this message.</span>
+             <span class="msg-date">20m</span>
+            </div>
+           </div>
+          </div>
+          <div class="msg" onclick="reloadPage()">
+           <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%2812%29.png" alt="" />
+           <div class="msg-detail">
+            <div class="msg-username">Miguel Cohen</div>
+            <div class="msg-content">
+             <span class="msg-message">Adaptogen taiyaki austin jean shorts brunch</span>
+             <span class="msg-date">20m</span>
+            </div>
+           </div>
+          </div>
+          <div class="msg">
+           <div class="msg-profile group">
+            <img src="IIITU.png">
+           </div>
+           <div class="msg-detail">
+            <div class="msg-username">IIIT Una</div>
+            <div class="msg-content">
+             <span class="msg-message">Ayush: Fill the form asap.</span>
+             <span class="msg-date">28m</span>
+            </div>
+           </div>
+          </div>
+          <div class="msg online">
+           <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%282%29.png" alt="" />
+           <div class="msg-detail">
+            <div class="msg-username">Lea Debere</div>
+            <div class="msg-content">
+             <span class="msg-message">Shoreditch iPhone jianbing</span>
+             <span class="msg-date">45m</span>
+            </div>
+           </div>
+          </div>
+          <div class="msg online">
+           <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29+%281%29.png" alt="" />
+           <div class="msg-detail">
+            <div class="msg-username">Rohan</div>
+            <div class="msg-content">
+             <span class="msg-message"></span>
+             <span class="msg-date">2h</span>
+            </div>
+           </div>
+          </div>
+          <div class="msg">
+           <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%284%29+%281%29.png" alt="" />
+           <div class="msg-detail">
+            <div class="msg-username">Vibhav</div>
+            <div class="msg-content">
+             <span class="msg-message">Hello, what to do next.</span>
+             <span class="msg-date">18m</span>
+            </div>
+           </div>
+          </div>
+          <div class="msg online">
+           <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png" alt="">
+           <div class="msg-detail">
+            <div class="msg-username">Vaibhav</div>
+            <div class="msg-content">
+             <span class="msg-message">Ethical typewriter se ho jaega Dont worry lo-fi street art</span>
+             <span class="msg-date">2h</span>
+            </div>
+           </div>
+          </div>
+          <div class="msg">
+           <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/qs6F3dgm.png" alt="" />
+           <div class="msg-detail">
+            <div class="msg-username">Utkarsh</div>
+            <div class="msg-content">
+             <span class="msg-message">I'm lucky I'm in love with my best friend.</span>
+             <span class="msg-date">4h</span>
+            </div>
+           </div>
+          </div>
+          <div class="msg">
+           <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%288%29.png" alt="" />
+           <div class="msg-detail">
+            <div class="msg-username">Kaustubh</div>
+            <div class="msg-content">
+             <span class="msg-message">Look at the word its entertaining.</span>
+             <span class="msg-date">28m</span>
+            </div>
+           </div>
+          </div>
+          <div class="msg">
+           <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%289%29.png" alt="" />
+           <div class="msg-detail">
+            <div class="msg-username">Mark</div>
+            <div class="msg-content">
+             <span class="msg-message">Aaj ho jaegi apni webinar?</span>
+             <span class="msg-date">35m</span>
+            </div>
+           </div>
+          </div>
+          <div class="msg">
+           <img class="msg-profile" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%286%29.png" alt="" />
+           <div class="msg-detail">
+            <div class="msg-username">Lina Ashima</div>
+            <div class="msg-content">
+             <span class="msg-message">Han ho jani chahiye aaj.</span>
+             <span class="msg-date">42m</span>
+            </div>
+           </div>
+          </div>
+          <button class="add"></button>
+          <div class="overlay"></div>
+         </div>
+         
+         <div class="chat-area">
+          <div id="chat-container">
+            <div id="profile-box">
+              <h1>Name: Aaditya</h1>
+              <p>Email: 22201@iiitu.ac.in</p>
+            </div>
+            <!-- Chat messages will be displayed here -->
+            <div id="emoji-box">
+              <span class="emoji-button" onclick="printEmoji('😀')">😀</span>
+              <span class="emoji-button" onclick="printEmoji('😍')">😍</span>
+              <span class="emoji-button" onclick="printEmoji('🎉')">🎉</span>
+              <span class="emoji-button" onclick="printEmoji('🌟')">🌟</span>
+              <span class="emoji-button" onclick="printEmoji('🚀')">🚀</span>
+              <span class="emoji-button" onclick="printEmoji('🤣')">🤣</span>
+              <span class="emoji-button" onclick="printEmoji('👌')">👌</span>
+              <span class="emoji-button" onclick="printEmoji('❤️')">❤️</span>
+              <span class="emoji-button" onclick="printEmoji('👍')">👍</span>
+              <span class="emoji-button" onclick="printEmoji('😁')">😁</span>
+              <span class="emoji-button" onclick="printEmoji('😴')">😴</span>
+            </div>
+             <!-- Input element for selecting files -->
+          <input type="file" id="fileInput" style="display: none;">
+          </div>
+          <div class="chat-area-footer">
+            <div id="input-container">
+              <i class="fa-regular fa-face-smile" id="emoji-button" style="font-size: larger;"></i>&nbsp;&nbsp;
+              <i class="fa-solid fa-paperclip" onclick="openFileExplorer()" style="font-size: larger;"></i>&nbsp;&nbsp;
+              <input type="text" id="message-input" placeholder="Type your message...">
+              <i class="fa-solid fa-circle-right" style="font-size:large;" id="send-button"></i>
+            </div>
+          </div>
+        </div>
+          <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+          <script src="msng.js"></script>
+        </body>
+        </html>

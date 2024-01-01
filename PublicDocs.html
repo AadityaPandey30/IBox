@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pdoc.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/58118f0173.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---------The Header--------->
+    <header class="Flex-box">
+        <div class="left-part Flex-box">
+            <a href="index.html" style="margin: auto;"><i class="fas fa-brands fa-wolf-pack-battalion" style="color: black; margin: auto;"><span>IBox</span></i></a>
+        </div> 
+        <div class="center-part Flex-box">
+            <div class="search-bar Flex-box">
+                <input type="text" placeholder="Search" id="search" >
+                <button class="search-btn"><i class="fas fa-solid fa-magnifying-glass"></i></button>
+                <i class="fas fa-microphone mic-icon"></i>
+            </div>
+        </div>
+        <div class="right-part Flex-box">
+            <span style="margin-right: 10%"><a href="exp.html"><i class="fas fa-solid fa-comment-dots"></i></a></span><hr style="color:2px solid #000000;height: 30px;">
+            <span><a href="login.html"><i class="fas fa-solid fa-user" style="color: #000000; padding: 5px;"></i></a></span>
+        </div>
+    </header>
+    <!---------Public Documents---->
+    <div class="all">
+<div class="pdocs">
+    <div class="upload">
+        <input type="file"
+    class="inputFile"
+    id="fileInp"
+    onchange="getFile(event)"
+    accept="image/png, image/jpeg"/>
+    <label for="fileInp">+</label>
+    <span class="fileText"></span>
+    <button id="up-pub" onclick="uploadImage()">Upload Image</button>
+    <div class="bar" style="width: auto;">
+        <div class="progress">
+        </div>
+    </div>
+    <div class="uploadPercentage"></div>
+    <div class="imageUploaded">
+        <img alt="" class="img" />
+    </div>
+    </div>
+    <h3 style="background-color: white; width: fit-content;margin: auto;">NOTE: This part of the website is currently non functional due to awaited government response.</h3>
+
+</div>
+</div>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="fileCircles.js"></script>
+</body>
+<!---------Footer-->
+<footer style="position: fixed;">
+    <h3>Frequently Asked</h3>
+    <a href="">How to use this site</a><br>
+    <a href="mailto:22201@iiitu.ac.in">Contact me</a><br>
+    <a href="">Benefits</a><br>
+    <a href="">About the developer</a><br>
+</footer>
+</html>
